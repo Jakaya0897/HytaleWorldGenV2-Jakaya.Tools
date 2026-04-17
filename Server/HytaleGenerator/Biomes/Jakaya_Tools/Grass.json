@@ -1,0 +1,285 @@
+{
+	"$NodeId": "Biome-007e596e-38c4-49f5-92f2-a6cc056cb479",
+	"MaterialProvider": {
+		"$NodeId": "SolidityMaterialProvider-04fe4d88-476b-4e2d-8784-2ba6ef5e8e48",
+		"Solid": {
+			"$NodeId": "QueueMaterialProvider-eab3cd79-4bbd-4488-83ba-ddb6d5290288",
+			"Queue": [
+				{
+					"$NodeId": "FieldFunctionMaterialProvider-bf20fb7f-966d-4745-8c00-b2e85571f860",
+					"FieldFunction": {
+						"$NodeId": "Angle.Density-46a31521-5a4f-4912-8ad1-c21b5c6673d1",
+						"Vector": {
+							"$NodeId": "Point3D-2e0a904c-bae0-4070-b8f3-76f5f5176d60",
+							"X": 0,
+							"Y": 10,
+							"Z": 0
+						},
+						"VectorProvider": {
+							"$NodeId": "DensityGradient.VectorProvider-7b8d15ac-3eeb-4f30-b77d-df98034e4382",
+							"Density": {
+								"$NodeId": "ImportedDensityNode-a5483e80-8aef-428a-8cab-568bf015709b",
+								"Skip": false,
+								"Name": "MountainTest",
+								"Type": "Imported"
+							},
+							"Type": "DensityGradient"
+						},
+						"Skip": false,
+						"IsAxis": false,
+						"Type": "Angle"
+					},
+					"Delimiters": [
+						{
+							"$NodeId": "DelimiterFieldFunctionMP-bb9ab141-d77c-424d-85be-2f25f485925a",
+							"Material": {
+								"$NodeId": "ConstantMaterialProvider-6c063b88-0885-4b18-8927-41f2032c5425",
+								"Material": {
+									"$NodeId": "Material-ae93f9a7-85b4-4290-851e-bd4d61b0d770",
+									"Solid": "Rock_Stone",
+									"SolidBottomUp": false
+								},
+								"Type": "Constant"
+							},
+							"From": 0,
+							"To": 120
+						}
+					],
+					"Type": "FieldFunction"
+				},
+				{
+					"$NodeId": "SimpleHorizontalMaterialProvider-0f2a2173-54fa-4fdc-8b11-5c9a82bdff47",
+					"Material": {
+						"$NodeId": "SpaceAndDepthMaterialProvider-7ff5eaf0-686b-4223-bb65-88e96f557e7d",
+						"Condition": {
+							"$NodeId": "AndConditionSADMP-74db23ba-5f66-474a-b8f6-66f1bf57cfa9",
+							"Conditions": [
+								{
+									"$NodeId": "GreaterThanConditionSADMP-c6977a47-fb37-46c0-a816-c408f4bc1502",
+									"ContextToCheck": "SPACE_ABOVE_FLOOR",
+									"Threshold": 10,
+									"Type": "GreaterThanCondition"
+								}
+							],
+							"Type": "AndCondition"
+						},
+						"Layers": [
+							{
+								"$NodeId": "ConstantThicknessLayerSADMP-7712e7bb-ae8e-4828-b4e2-7fb4bff6b30f",
+								"Material": {
+									"$NodeId": "QueueMaterialProvider-bd3edf69-f7d7-4b31-b063-4c1ef4701f0e",
+									"Queue": [
+										{
+											"$NodeId": "ConstantMaterialProvider-9f85e343-f066-4112-a2a6-574dcdfaad6c",
+											"Material": {
+												"$NodeId": "Material-84f3b3b4-61c8-4fe0-805a-21fb9dc7e7af",
+												"Solid": "Soil_Grass",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										}
+									],
+									"Type": "Queue"
+								},
+								"Thickness": 1,
+								"Type": "ConstantThickness"
+							},
+							{
+								"$NodeId": "RangeThicknessLayerSADMP-0f67e6c3-8875-4921-825c-5bdb4a66e558",
+								"Material": {
+									"$NodeId": "QueueMaterialProvider-f2541ad2-d2af-4311-b3fd-3a045ff024ea",
+									"Queue": [
+										{
+											"$NodeId": "ConstantMaterialProvider-b0ee1548-dc25-4cae-b691-1a90b61171c3",
+											"Material": {
+												"$NodeId": "Material-bcc31c8d-a1e4-4dfa-9d39-6d2a55d9dcb1",
+												"Solid": "Soil_Dirt",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										}
+									],
+									"Type": "Queue"
+								},
+								"RangeMax": 3,
+								"RangeMin": 1,
+								"Seed": "A",
+								"Type": "RangeThickness"
+							}
+						],
+						"ExportAs": "",
+						"LayerContext": "DEPTH_INTO_FLOOR",
+						"MaxExpectedDepth": 3,
+						"Type": "SpaceAndDepth"
+					},
+					"TopY": 320,
+					"TopBaseHeight": "Bedrock",
+					"BottomY": 60,
+					"BottomBaseHeight": "Bedrock",
+					"Type": "SimpleHorizontal"
+				}
+			],
+			"Type": "Queue"
+		},
+		"ExportAs": "Jakaya_Tools.Grass",
+		"Type": "Solidity"
+	},
+	"$NodeEditorMetadata": {
+		"$Nodes": {
+			"Point3D-2e0a904c-bae0-4070-b8f3-76f5f5176d60": {
+				"$Position": {
+					"$x": -4402.668304681313,
+					"$y": -490.21710180187387
+				}
+			},
+			"ImportedDensityNode-a5483e80-8aef-428a-8cab-568bf015709b": {
+				"$Position": {
+					"$x": -3394.777109610822,
+					"$y": -155.27321230766364
+				}
+			},
+			"DensityGradient.VectorProvider-7b8d15ac-3eeb-4f30-b77d-df98034e4382": {
+				"$Position": {
+					"$x": -4491.814843307193,
+					"$y": -165.39494777850183
+				}
+			},
+			"Angle.Density-46a31521-5a4f-4912-8ad1-c21b5c6673d1": {
+				"$Position": {
+					"$x": -5161.0447302704815,
+					"$y": -174.82072083432314
+				}
+			},
+			"Material-ae93f9a7-85b4-4290-851e-bd4d61b0d770": {
+				"$Position": {
+					"$x": -4904.1629732919055,
+					"$y": 173.36154509526247
+				}
+			},
+			"ConstantMaterialProvider-6c063b88-0885-4b18-8927-41f2032c5425": {
+				"$Position": {
+					"$x": -5463.155370871823,
+					"$y": 173.36154509526247
+				}
+			},
+			"DelimiterFieldFunctionMP-bb9ab141-d77c-424d-85be-2f25f485925a": {
+				"$Position": {
+					"$x": -5858.1359839490915,
+					"$y": 129.29309066847506
+				}
+			},
+			"FieldFunctionMaterialProvider-bf20fb7f-966d-4745-8c00-b2e85571f860": {
+				"$Position": {
+					"$x": -6399.166863337047,
+					"$y": -155.98255516558436
+				}
+			},
+			"GreaterThanConditionSADMP-c6977a47-fb37-46c0-a816-c408f4bc1502": {
+				"$Position": {
+					"$x": -3825.3762751004765,
+					"$y": 797.8911547502976
+				}
+			},
+			"AndConditionSADMP-74db23ba-5f66-474a-b8f6-66f1bf57cfa9": {
+				"$Position": {
+					"$x": -4096.998289795141,
+					"$y": 800.4798886617181
+				}
+			},
+			"Material-84f3b3b4-61c8-4fe0-805a-21fb9dc7e7af": {
+				"$Position": {
+					"$x": -2514.798545128312,
+					"$y": 939.5932372556371
+				}
+			},
+			"ConstantMaterialProvider-9f85e343-f066-4112-a2a6-574dcdfaad6c": {
+				"$Position": {
+					"$x": -3083.7985451283116,
+					"$y": 979.5932372556371
+				}
+			},
+			"QueueMaterialProvider-bd3edf69-f7d7-4b31-b063-4c1ef4701f0e": {
+				"$Position": {
+					"$x": -3643.7985451283116,
+					"$y": 979.5932372556371
+				}
+			},
+			"ConstantThicknessLayerSADMP-7712e7bb-ae8e-4828-b4e2-7fb4bff6b30f": {
+				"$Position": {
+					"$x": -3976.4431401990882,
+					"$y": 980.7706654576562
+				}
+			},
+			"Material-bcc31c8d-a1e4-4dfa-9d39-6d2a55d9dcb1": {
+				"$Position": {
+					"$x": -2444.798545128312,
+					"$y": 1170.593237255637
+				}
+			},
+			"ConstantMaterialProvider-b0ee1548-dc25-4cae-b691-1a90b61171c3": {
+				"$Position": {
+					"$x": -3013.7985451283116,
+					"$y": 1210.593237255637
+				}
+			},
+			"QueueMaterialProvider-f2541ad2-d2af-4311-b3fd-3a045ff024ea": {
+				"$Position": {
+					"$x": -3573.7985451283116,
+					"$y": 1210.593237255637
+				}
+			},
+			"RangeThicknessLayerSADMP-0f67e6c3-8875-4921-825c-5bdb4a66e558": {
+				"$Position": {
+					"$x": -4051.7985451283116,
+					"$y": 1170.593237255637
+				}
+			},
+			"SpaceAndDepthMaterialProvider-7ff5eaf0-686b-4223-bb65-88e96f557e7d": {
+				"$Position": {
+					"$x": -4688.798545128311,
+					"$y": 1075.093237255637
+				}
+			},
+			"SimpleHorizontalMaterialProvider-0f2a2173-54fa-4fdc-8b11-5c9a82bdff47": {
+				"$Position": {
+					"$x": -5317.798545128311,
+					"$y": 1035.093237255637
+				}
+			},
+			"QueueMaterialProvider-eab3cd79-4bbd-4488-83ba-ddb6d5290288": {
+				"$Position": {
+					"$x": -5877.798545128311,
+					"$y": 1115.093237255637
+				}
+			},
+			"SolidityMaterialProvider-04fe4d88-476b-4e2d-8784-2ba6ef5e8e48": {
+				"$Position": {
+					"$x": -6435.798545128311,
+					"$y": 1107.093237255637
+				}
+			},
+			"Biome-007e596e-38c4-49f5-92f2-a6cc056cb479": {
+				"$Position": {
+					"$x": -8090.653287647794,
+					"$y": 1058.730582105685
+				}
+			}
+		},
+		"$FloatingNodes": [],
+		"$Links": {},
+		"$Groups": [
+			{
+				"$NodeId": "Group-16d2c4ca-4e0d-4735-bd26-867a3df251f2",
+				"$Position": {
+					"$x": -7084.696427218988,
+					"$y": 835.9441588034249
+				},
+				"$width": 5377,
+				"$height": 738,
+				"$name": "Jakaya.Grass"
+			}
+		],
+		"$Comments": [],
+		"$WorkspaceID": "HytaleGenerator - Biome"
+	}
+}
