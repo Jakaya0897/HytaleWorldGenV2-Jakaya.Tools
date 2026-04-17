@@ -21,6 +21,8 @@ Built to be **drop-in ready**, these tools can be added to existing worlds with 
 
 Visualise terrain height using colour mapping. Perfect for debugging terrain shaping and elevation logic.
 
+![Heightmap Example](images/heightmap.png)
+
 ## 🚀 Usage
 
 To use the heightmap tool, add an **Import Material Provider** node to your biome setup.
