@@ -1,0 +1,705 @@
+{
+	"$NodeId": "Biome-007e596e-38c4-49f5-92f2-a6cc056cb479",
+	"MaterialProvider": {
+		"$NodeId": "QueueMaterialProvider-086c5868-c326-4620-aae7-86403342fe6b",
+		"Queue": [
+			{
+				"$NodeId": "SimpleHorizontalMaterialProvider-9da5c8da-16d7-4b3c-8d40-eaa75a47e77f",
+				"Material": {
+					"$NodeId": "ConstantMaterialProvider-ec42c4fa-6a1d-45e6-8538-a542073d368a",
+					"Material": {
+						"$NodeId": "Material-8888311e-882a-4733-8674-c8aa287fb250",
+						"Solid": "Rock_Bedrock",
+						"SolidBottomUp": false
+					},
+					"Type": "Constant"
+				},
+				"ExportAs": "",
+				"TopY": 1,
+				"TopBaseHeight": "Bedrock",
+				"BottomY": 0,
+				"BottomBaseHeight": "Bedrock",
+				"Type": "SimpleHorizontal"
+			},
+			{
+				"$NodeId": "SimpleHorizontalMaterialProvider-fbfd392a-fc36-48c7-a7a5-baa17673f343",
+				"Material": {
+					"$NodeId": "ConstantMaterialProvider-3a94f0eb-d515-481a-a0d2-924bd9e6737f",
+					"Material": {
+						"$NodeId": "Material-de4461be-c2b2-4756-b8e9-bae858762dad",
+						"Solid": "",
+						"Fluid": "Lava_Source",
+						"SolidBottomUp": false
+					},
+					"Type": "Constant"
+				},
+				"TopY": 5,
+				"TopBaseHeight": "Bedrock",
+				"BottomY": 1,
+				"BottomBaseHeight": "Bedrock",
+				"Type": "SimpleHorizontal"
+			},
+			{
+				"$NodeId": "SimpleHorizontalMaterialProvider-ac5c670d-cd3f-45aa-a72b-38cbaccb74f4",
+				"Material": {
+					"$NodeId": "FieldFunctionMaterialProvider-5e555d2a-43ae-437d-a694-d69b9d9d43c0",
+					"FieldFunction": {
+						"$NodeId": "ImportedDensityNode-52bc1b99-2b8e-4ce6-b7a6-e18dfa7d7a73",
+						"Skip": false,
+						"Name": "Jakaya.Bedrock_Density",
+						"Type": "Imported"
+					},
+					"Delimiters": [
+						{
+							"$NodeId": "DelimiterFieldFunctionMP-91595a73-0673-4e26-9ce4-4c8d2cf9d0e3",
+							"Material": {
+								"$NodeId": "ConstantMaterialProvider-072a97ab-6903-491a-9e85-d02dd9c8dbca",
+								"Material": {
+									"$NodeId": "Material-ac584aef-b9a2-4780-8dda-328f4628a5b7",
+									"Solid": "",
+									"Fluid": "Lava_Source",
+									"SolidBottomUp": false
+								},
+								"Type": "Constant"
+							},
+							"From": -1,
+							"To": 0
+						},
+						{
+							"$NodeId": "DelimiterFieldFunctionMP-ed756459-ff51-4412-ad47-e4e9f0a821c6",
+							"Material": {
+								"$NodeId": "WeightedMaterialProvider-212bd551-ddfe-4b0b-a07c-f26d301d12c6",
+								"$Comment": "More Glow",
+								"WeightedMaterials": [
+									{
+										"$NodeId": "WeightedMaterial-ef901128-2353-4731-b18a-cbef94b2d122",
+										"Material": {
+											"$NodeId": "ConstantMaterialProvider-e059b555-aa7d-420d-9e6f-9e8fe510d5ce",
+											"Material": {
+												"$NodeId": "Material-030b1072-9214-4a42-a91c-a1cd9fe823c9",
+												"Solid": "Rock_Volcanic_Cracked_Lava",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										},
+										"Weight": 1
+									},
+									{
+										"$NodeId": "WeightedMaterial-9992daeb-4c9d-42ed-ab5d-07da6ab19c32",
+										"Material": {
+											"$NodeId": "ConstantMaterialProvider-4696b897-6e04-46ef-9728-c70a6e8cc35b",
+											"Material": {
+												"$NodeId": "Material-1cafe348-4f97-4965-8653-fc7a48e51615",
+												"Solid": "Rock_Volcanic",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										},
+										"Weight": 0.3
+									}
+								],
+								"SkipChance": 0,
+								"Type": "Weighted"
+							},
+							"From": -0.15,
+							"To": 0.15
+						},
+						{
+							"$NodeId": "DelimiterFieldFunctionMP-b4d391e3-46ab-4d8b-abfb-939162db3996",
+							"Material": {
+								"$NodeId": "QueueMaterialProvider-9be26172-8f95-40e1-ac8f-b7adc8b5cced",
+								"Queue": [
+									{
+										"$NodeId": "WeightedMaterialProvider-c5e98ab2-1004-4c13-976c-6fc4c4560306",
+										"$Comment": "Less Glow",
+										"WeightedMaterials": [
+											{
+												"$NodeId": "WeightedMaterial-c494ed32-1180-4083-ac61-cd2a684344ed",
+												"Material": {
+													"$NodeId": "ConstantMaterialProvider-e059b555-aa7d-420d-9e6f-9e8fe510d5ce",
+													"Material": {
+														"$NodeId": "Material-030b1072-9214-4a42-a91c-a1cd9fe823c9",
+														"Solid": "Rock_Volcanic_Cracked_Lava",
+														"SolidBottomUp": false
+													},
+													"Type": "Constant"
+												},
+												"Weight": 0.45
+											},
+											{
+												"$NodeId": "WeightedMaterial-a410474b-6806-4e90-a13d-9787513080e8",
+												"Material": {
+													"$NodeId": "ConstantMaterialProvider-4696b897-6e04-46ef-9728-c70a6e8cc35b",
+													"Material": {
+														"$NodeId": "Material-1cafe348-4f97-4965-8653-fc7a48e51615",
+														"Solid": "Rock_Volcanic",
+														"SolidBottomUp": false
+													},
+													"Type": "Constant"
+												},
+												"Weight": 1
+											}
+										],
+										"SkipChance": 0,
+										"Type": "Weighted"
+									},
+									{
+										"$NodeId": "SimpleHorizontalMaterialProvider-44c4b9c7-fd35-4d5d-93aa-58e4cb0a109b",
+										"Material": {
+											"$NodeId": "WeightedMaterialProvider-212bd551-ddfe-4b0b-a07c-f26d301d12c6",
+											"$Comment": "More Glow",
+											"WeightedMaterials": [
+												{
+													"$NodeId": "WeightedMaterial-ef901128-2353-4731-b18a-cbef94b2d122",
+													"Material": {
+														"$NodeId": "ConstantMaterialProvider-e059b555-aa7d-420d-9e6f-9e8fe510d5ce",
+														"Material": {
+															"$NodeId": "Material-030b1072-9214-4a42-a91c-a1cd9fe823c9",
+															"Solid": "Rock_Volcanic_Cracked_Lava",
+															"SolidBottomUp": false
+														},
+														"Type": "Constant"
+													},
+													"Weight": 1
+												},
+												{
+													"$NodeId": "WeightedMaterial-9992daeb-4c9d-42ed-ab5d-07da6ab19c32",
+													"Material": {
+														"$NodeId": "ConstantMaterialProvider-4696b897-6e04-46ef-9728-c70a6e8cc35b",
+														"Material": {
+															"$NodeId": "Material-1cafe348-4f97-4965-8653-fc7a48e51615",
+															"Solid": "Rock_Volcanic",
+															"SolidBottomUp": false
+														},
+														"Type": "Constant"
+													},
+													"Weight": 0.3
+												}
+											],
+											"SkipChance": 0,
+											"Type": "Weighted"
+										},
+										"TopY": 7,
+										"TopBaseHeight": "Bedrock",
+										"BottomY": 5,
+										"BottomBaseHeight": "Bedrock",
+										"Type": "SimpleHorizontal"
+									}
+								],
+								"Type": "Queue"
+							},
+							"From": 0.15,
+							"To": 1
+						}
+					],
+					"Type": "FieldFunction"
+				},
+				"TopY": 8,
+				"TopBaseHeight": "Bedrock",
+				"BottomY": 5,
+				"BottomBaseHeight": "Bedrock",
+				"Type": "SimpleHorizontal"
+			},
+			{
+				"$NodeId": "SimpleHorizontalMaterialProvider-769bc8b9-6025-49c6-9fe1-55b901325521",
+				"Material": {
+					"$NodeId": "FieldFunctionMaterialProvider-edb9c7d1-cbf2-42cc-a6f9-c90e21d25d73",
+					"FieldFunction": {
+						"$NodeId": "ImportedDensityNode-452a4b08-e607-4bf8-864c-90c013b9e2cf",
+						"Skip": false,
+						"Name": "Jakaya.Bedrock_Density",
+						"Type": "Imported"
+					},
+					"Delimiters": [
+						{
+							"$NodeId": "DelimiterFieldFunctionMP-f74143b7-9ccb-4385-bad3-50dfb44f7b4b",
+							"$Comment": "Glowing Spots to warn of Lava Below",
+							"Material": {
+								"$NodeId": "WeightedMaterialProvider-0f2702f8-9062-4f4b-94d7-93cda577ecad",
+								"WeightedMaterials": [
+									{
+										"$NodeId": "WeightedMaterial-45430bc4-10f0-4a2b-97b2-96002518fe21",
+										"Material": {
+											"$NodeId": "ConstantMaterialProvider-d2e920aa-87bf-4980-a37a-864cf7bb8a89",
+											"Material": {
+												"$NodeId": "Material-d8b8f3ee-a1a5-4778-88ce-15bb0257c754",
+												"Solid": "Empty",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										},
+										"Weight": 0.8
+									},
+									{
+										"$NodeId": "WeightedMaterial-adb7622d-77df-4e26-8e12-db3e44518650",
+										"Material": {
+											"$NodeId": "ConstantMaterialProvider-1ff86455-9b85-4135-ac73-3d3aa1fd1e19",
+											"Material": {
+												"$NodeId": "Material-bfbb243f-ef63-483f-a2be-f28f2a187ed4",
+												"Solid": "Rock_Volcanic",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										},
+										"Weight": 0.05
+									},
+									{
+										"$NodeId": "WeightedMaterial-c0e56ca0-cb42-4f2d-a684-22910f4250f6",
+										"Material": {
+											"$NodeId": "ConstantMaterialProvider-9775cb06-b13c-4a4f-bfbd-8245ab2d4a88",
+											"Material": {
+												"$NodeId": "Material-297a78df-ad02-4512-a1cf-cee5c589d61d",
+												"Solid": "Rock_Volcanic_Cracked_Lava",
+												"Fluid": "",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										},
+										"Weight": 1
+									}
+								],
+								"SkipChance": 0,
+								"Type": "Weighted"
+							},
+							"From": -1,
+							"To": 0
+						},
+						{
+							"$NodeId": "DelimiterFieldFunctionMP-22418525-95e4-4e65-bcd0-8c2b4c3701fb",
+							"$Comment": "Island Cover cooler looking than the hot spot",
+							"Material": {
+								"$NodeId": "WeightedMaterialProvider-876314f1-836c-4d67-bcf1-a643897ac4c0",
+								"WeightedMaterials": [
+									{
+										"$NodeId": "WeightedMaterial-87de4d70-3e3a-464a-b9ea-106c5163992e",
+										"Material": {
+											"$NodeId": "ConstantMaterialProvider-9775cb06-b13c-4a4f-bfbd-8245ab2d4a88",
+											"Material": {
+												"$NodeId": "Material-297a78df-ad02-4512-a1cf-cee5c589d61d",
+												"Solid": "Rock_Volcanic_Cracked_Lava",
+												"Fluid": "",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										},
+										"Weight": 0.05
+									},
+									{
+										"$NodeId": "WeightedMaterial-638c137d-2ae7-44ca-b99e-4d47b6e0c3cd",
+										"Material": {
+											"$NodeId": "ConstantMaterialProvider-1ff86455-9b85-4135-ac73-3d3aa1fd1e19",
+											"Material": {
+												"$NodeId": "Material-bfbb243f-ef63-483f-a2be-f28f2a187ed4",
+												"Solid": "Rock_Volcanic",
+												"SolidBottomUp": false
+											},
+											"Type": "Constant"
+										},
+										"Weight": 1
+									}
+								],
+								"SkipChance": 0,
+								"Type": "Weighted"
+							},
+							"From": -999,
+							"To": 999
+						}
+					],
+					"Type": "FieldFunction"
+				},
+				"TopY": 10,
+				"TopBaseHeight": "Bedrock",
+				"BottomY": 8,
+				"BottomBaseHeight": "Bedrock",
+				"Type": "SimpleHorizontal"
+			}
+		],
+		"ExportAs": "Jakaya_Tools.Bedrock",
+		"Type": "Queue"
+	},
+	"$NodeEditorMetadata": {
+		"$Nodes": {
+			"Material-8888311e-882a-4733-8674-c8aa287fb250": {
+				"$Position": {
+					"$x": -4071.835120642204,
+					"$y": -1774.7461101052058
+				}
+			},
+			"ConstantMaterialProvider-ec42c4fa-6a1d-45e6-8538-a542073d368a": {
+				"$Position": {
+					"$x": -4578.338769604697,
+					"$y": -1779.3990900691233
+				}
+			},
+			"SimpleHorizontalMaterialProvider-9da5c8da-16d7-4b3c-8d40-eaa75a47e77f": {
+				"$Position": {
+					"$x": -5175.590870041623,
+					"$y": -1775.6898526920022
+				}
+			},
+			"Material-de4461be-c2b2-4756-b8e9-bae858762dad": {
+				"$Position": {
+					"$x": -4112.1801098513,
+					"$y": -1273.9954302745728
+				}
+			},
+			"ConstantMaterialProvider-3a94f0eb-d515-481a-a0d2-924bd9e6737f": {
+				"$Position": {
+					"$x": -4595.627688838528,
+					"$y": -1274.1193643477518
+				}
+			},
+			"SimpleHorizontalMaterialProvider-fbfd392a-fc36-48c7-a7a5-baa17673f343": {
+				"$Position": {
+					"$x": -5151.7470933860595,
+					"$y": -1275.8799015826016
+				}
+			},
+			"ImportedDensityNode-52bc1b99-2b8e-4ce6-b7a6-e18dfa7d7a73": {
+				"$Position": {
+					"$x": -3827.3223688011103,
+					"$y": 720.2974856692863
+				}
+			},
+			"Material-ac584aef-b9a2-4780-8dda-328f4628a5b7": {
+				"$Position": {
+					"$x": -2955.1356233177144,
+					"$y": 959.3938264513099
+				}
+			},
+			"ConstantMaterialProvider-072a97ab-6903-491a-9e85-d02dd9c8dbca": {
+				"$Position": {
+					"$x": -3524.135623317715,
+					"$y": 999.3938264513099
+				}
+			},
+			"DelimiterFieldFunctionMP-91595a73-0673-4e26-9ce4-4c8d2cf9d0e3": {
+				"$Position": {
+					"$x": -3872.135623317715,
+					"$y": 979.3938264513099
+				}
+			},
+			"Material-030b1072-9214-4a42-a91c-a1cd9fe823c9": {
+				"$Position": {
+					"$x": -1969.5964270285044,
+					"$y": 1616.6216347849013
+				}
+			},
+			"ConstantMaterialProvider-e059b555-aa7d-420d-9e6f-9e8fe510d5ce": {
+				"$Position": {
+					"$x": -2538.5964270285044,
+					"$y": 1656.6216347849013
+				}
+			},
+			"WeightedMaterial-ef901128-2353-4731-b18a-cbef94b2d122": {
+				"$Position": {
+					"$x": -2880.1356233177144,
+					"$y": 1228.89382645131
+				}
+			},
+			"Material-1cafe348-4f97-4965-8653-fc7a48e51615": {
+				"$Position": {
+					"$x": -1969.5964270285044,
+					"$y": 1847.6216347849008
+				}
+			},
+			"ConstantMaterialProvider-4696b897-6e04-46ef-9728-c70a6e8cc35b": {
+				"$Position": {
+					"$x": -2538.5964270285044,
+					"$y": 1887.6216347849008
+				}
+			},
+			"WeightedMaterial-9992daeb-4c9d-42ed-ab5d-07da6ab19c32": {
+				"$Position": {
+					"$x": -2880.1356233177144,
+					"$y": 1459.89382645131
+				}
+			},
+			"WeightedMaterialProvider-212bd551-ddfe-4b0b-a07c-f26d301d12c6": {
+				"$Position": {
+					"$x": -3524.135623317715,
+					"$y": 1304.39382645131
+				}
+			},
+			"DelimiterFieldFunctionMP-ed756459-ff51-4412-ad47-e4e9f0a821c6": {
+				"$Position": {
+					"$x": -3872.135623317715,
+					"$y": 1324.39382645131
+				}
+			},
+			"WeightedMaterial-c494ed32-1180-4083-ac61-cd2a684344ed": {
+				"$Position": {
+					"$x": -2897.5964270285044,
+					"$y": 1656.6216347849013
+				}
+			},
+			"WeightedMaterial-a410474b-6806-4e90-a13d-9787513080e8": {
+				"$Position": {
+					"$x": -2897.5964270285044,
+					"$y": 1887.6216347849008
+				}
+			},
+			"WeightedMaterialProvider-c5e98ab2-1004-4c13-976c-6fc4c4560306": {
+				"$Position": {
+					"$x": -3541.596427028503,
+					"$y": 1732.1216347849013
+				}
+			},
+			"SimpleHorizontalMaterialProvider-44c4b9c7-fd35-4d5d-93aa-58e4cb0a109b": {
+				"$Position": {
+					"$x": -3093.754449166478,
+					"$y": 2014.8844472905212
+				}
+			},
+			"QueueMaterialProvider-9be26172-8f95-40e1-ac8f-b7adc8b5cced": {
+				"$Position": {
+					"$x": -3614.766334141378,
+					"$y": 2046.619366434189
+				}
+			},
+			"DelimiterFieldFunctionMP-b4d391e3-46ab-4d8b-abfb-939162db3996": {
+				"$Position": {
+					"$x": -3872.135623317715,
+					"$y": 1670.89382645131
+				}
+			},
+			"FieldFunctionMaterialProvider-5e555d2a-43ae-437d-a694-d69b9d9d43c0": {
+				"$Position": {
+					"$x": -4470.135623317715,
+					"$y": 1094.64382645131
+				}
+			},
+			"SimpleHorizontalMaterialProvider-ac5c670d-cd3f-45aa-a72b-38cbaccb74f4": {
+				"$Position": {
+					"$x": -5099.135623317715,
+					"$y": 1022.6438264513099
+				}
+			},
+			"ImportedDensityNode-452a4b08-e607-4bf8-864c-90c013b9e2cf": {
+				"$Position": {
+					"$x": -4082.3893004540105,
+					"$y": 3056.8239166729218
+				}
+			},
+			"Material-d8b8f3ee-a1a5-4778-88ce-15bb0257c754": {
+				"$Position": {
+					"$x": -2037.4793077636573,
+					"$y": 2928.6513155734037
+				}
+			},
+			"ConstantMaterialProvider-d2e920aa-87bf-4980-a37a-864cf7bb8a89": {
+				"$Position": {
+					"$x": -2581.435604646744,
+					"$y": 2939.130333551887
+				}
+			},
+			"WeightedMaterial-45430bc4-10f0-4a2b-97b2-96002518fe21": {
+				"$Position": {
+					"$x": -2938.2970608239325,
+					"$y": 2931.8339192737485
+				}
+			},
+			"Material-bfbb243f-ef63-483f-a2be-f28f2a187ed4": {
+				"$Position": {
+					"$x": -2086.9798630660903,
+					"$y": 3429.4065604531443
+				}
+			},
+			"ConstantMaterialProvider-1ff86455-9b85-4135-ac73-3d3aa1fd1e19": {
+				"$Position": {
+					"$x": -2638.4142839655765,
+					"$y": 3509.8771458476376
+				}
+			},
+			"WeightedMaterial-adb7622d-77df-4e26-8e12-db3e44518650": {
+				"$Position": {
+					"$x": -2940.717370989199,
+					"$y": 3024.695745647684
+				}
+			},
+			"Material-297a78df-ad02-4512-a1cf-cee5c589d61d": {
+				"$Position": {
+					"$x": -2061.2768558140237,
+					"$y": 3130.441536572115
+				}
+			},
+			"ConstantMaterialProvider-9775cb06-b13c-4a4f-bfbd-8245ab2d4a88": {
+				"$Position": {
+					"$x": -2567.1433657013117,
+					"$y": 3161.354049052413
+				}
+			},
+			"WeightedMaterial-c0e56ca0-cb42-4f2d-a684-22910f4250f6": {
+				"$Position": {
+					"$x": -2938.4827967130545,
+					"$y": 3116.313290969605
+				}
+			},
+			"WeightedMaterialProvider-0f2702f8-9062-4f4b-94d7-93cda577ecad": {
+				"$Position": {
+					"$x": -3513.1056563954235,
+					"$y": 3050.0139722045633
+				}
+			},
+			"DelimiterFieldFunctionMP-f74143b7-9ccb-4385-bad3-50dfb44f7b4b": {
+				"$Position": {
+					"$x": -3937.5108373281096,
+					"$y": 3227.7913280291114
+				}
+			},
+			"WeightedMaterial-87de4d70-3e3a-464a-b9ea-106c5163992e": {
+				"$Position": {
+					"$x": -3028.7843643270085,
+					"$y": 3468.949377892576
+				}
+			},
+			"WeightedMaterial-638c137d-2ae7-44ca-b99e-4d47b6e0c3cd": {
+				"$Position": {
+					"$x": -3026.549790050864,
+					"$y": 3560.5669232144983
+				}
+			},
+			"WeightedMaterialProvider-876314f1-836c-4d67-bcf1-a643897ac4c0": {
+				"$Position": {
+					"$x": -3596.3662304676955,
+					"$y": 3510.2890020012483
+				}
+			},
+			"DelimiterFieldFunctionMP-22418525-95e4-4e65-bcd0-8c2b4c3701fb": {
+				"$Position": {
+					"$x": -3940.0891146654435,
+					"$y": 3434.9974848736647
+				}
+			},
+			"FieldFunctionMaterialProvider-edb9c7d1-cbf2-42cc-a6f9-c90e21d25d73": {
+				"$Position": {
+					"$x": -4626.201603948498,
+					"$y": 3425.0812360542222
+				}
+			},
+			"SimpleHorizontalMaterialProvider-769bc8b9-6025-49c6-9fe1-55b901325521": {
+				"$Position": {
+					"$x": -5218.51370562703,
+					"$y": 3390.3666614733984
+				}
+			},
+			"QueueMaterialProvider-086c5868-c326-4620-aae7-86403342fe6b": {
+				"$Position": {
+					"$x": -5786.884142853861,
+					"$y": 1574.6129483787563
+				}
+			},
+			"Biome-007e596e-38c4-49f5-92f2-a6cc056cb479": {
+				"$Position": {
+					"$x": -6347.952826900764,
+					"$y": 1549.7632879204684
+				}
+			}
+		},
+		"$FloatingNodes": [],
+		"$Links": {},
+		"$Groups": [
+			{
+				"$NodeId": "Group-2f273391-69d5-4ad0-95d9-405eac9e6ab6",
+				"$Position": {
+					"$x": -5880.877577262973,
+					"$y": -2157.9071916844123
+				},
+				"$width": 5054,
+				"$height": 6225,
+				"$name": "Jakaya.Bedrock"
+			},
+			{
+				"$NodeId": "Group-2f62cc64-7743-49be-8285-10a39d989c92",
+				"$Position": {
+					"$x": -5143.975522486421,
+					"$y": 118.84788591581764
+				},
+				"$width": 4312,
+				"$height": 2142,
+				"$name": "Fractured Crust"
+			},
+			{
+				"$NodeId": "Group-ca52bb41-8ce2-4a58-b689-854a057d2fea",
+				"$Position": {
+					"$x": -5268.61432932263,
+					"$y": 2616.049529808398
+				},
+				"$width": 3904,
+				"$height": 1103,
+				"$name": "Upper Crust"
+			},
+			{
+				"$NodeId": "Group-61c2861d-8207-4994-b2f2-a958f256f919",
+				"$Position": {
+					"$x": -5193.219673595754,
+					"$y": -1439.725019228591
+				},
+				"$width": 1704,
+				"$height": 421,
+				"$name": "Magma Chamber"
+			},
+			{
+				"$NodeId": "Group-0acc92e3-97b6-4a8e-9be5-982751c0c8dc",
+				"$Position": {
+					"$x": -5177.728663997087,
+					"$y": -1906.6099236882974
+				},
+				"$width": 1805,
+				"$height": 387,
+				"$name": "Bedrock"
+			}
+		],
+		"$Comments": [
+			{
+				"$NodeId": "Comment-fa64f3a0-7627-45a9-bb41-970961a36a82",
+				"$Position": {
+					"$x": -5190.982113635769,
+					"$y": -1401.746067051804
+				},
+				"$width": 510,
+				"$height": 74,
+				"$name": "Lava Lake sitting below the Basalt",
+				"$text": "Its kind of like the core but not really just more intresting than hitting bedrock ",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-16ca802f-bf1e-4a31-b75e-ca7b9ae144b9",
+				"$Position": {
+					"$x": -5173.723214297867,
+					"$y": -1863.9152857050694
+				},
+				"$width": 184,
+				"$height": 83,
+				"$name": "1 Block layer",
+				"$text": "Stops player falling out of the world sits below the Magma Layer",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-42ebc929-3fa4-48e7-a878-85576bdaa152",
+				"$Position": {
+					"$x": -5078.366285641775,
+					"$y": 187.52501851430407
+				},
+				"$width": 209,
+				"$height": 100,
+				"$name": "Islands of glowing lavarock",
+				"$text": "Stunning cracked effect with lava inbetween",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-961bedc0-91d0-41a1-94d1-2f7e930291db",
+				"$Position": {
+					"$x": -5255.117741855906,
+					"$y": 2659.9745541004722
+				},
+				"$width": 466,
+				"$height": 100,
+				"$name": "Final transition",
+				"$text": "Uses some of the fractured crust math to make sure everything lines up so player is warned of lava below",
+				"$fontSize": 9
+			}
+		],
+		"$WorkspaceID": "HytaleGenerator - Biome"
+	}
+}
