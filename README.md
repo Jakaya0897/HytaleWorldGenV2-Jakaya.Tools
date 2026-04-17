@@ -32,8 +32,27 @@ Set the provider to:
 ```json
 Jakaya_Tools.Heightmap
 ```
+## 🗺️ Contour Map (10m)
 
+Visualise terrain using **10 metre contour lines**, making it easy to read elevation, slopes, and terrain structure at a glance.
 
+Every **50 metres** is highlighted with a **thicker line** for improved readability, while the **water level is marked in blue** for quick reference.
+
+---
+
+### 🧪 Example
+
+![Contour Map Example](images/contour10.png)
+
+---
+
+### 🚀 Usage
+
+Add an **Import Material Provider** node to your biome setup and set it to:
+
+```json
+Jakaya_Tools.Contour10
+```
 
 ## 📦 Installation
 
