@@ -55,7 +55,7 @@ Jakaya_Tools.Contour10
 
 Creates a **layered world foundation** designed to prevent void falls while adding a dramatic, stylised underground appearance.
 
-This tool generates a structured base consisting of **bedrock, lava, and crust layers**, giving your world a strong visual identity beneath the surface.
+This tool generates a structured base consisting of **bedrock, lava, and crust layers**, giving your world a strong visual identity beneath the surface.it utilises from Y=0 - Y=10 and will override all density maps.
 
 ### 🧪 Example
 
