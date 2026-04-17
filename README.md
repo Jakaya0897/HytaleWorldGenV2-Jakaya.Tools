@@ -32,19 +32,16 @@ Set the provider to:
 ```json
 Jakaya_Tools.Heightmap
 ```
+---
 ## 🗺️ Contour Map (10m)
 
 Visualise terrain using **10 metre contour lines**, making it easy to read elevation, slopes, and terrain structure at a glance.
 
 Every **50 metres** is highlighted with a **thicker line** for improved readability, while the **water level is marked in blue** for quick reference.
 
----
-
 ### 🧪 Example
 
 ![Contour Map Example](images/contour10.png)
-
----
 
 ### 🚀 Usage
 
@@ -53,7 +50,25 @@ Add an **Import Material Provider** node to your biome setup and set it to:
 ```json
 Jakaya_Tools.Contour10
 ```
+---
+## 🌋 Bedrock Foundation
 
+Creates a **layered world foundation** designed to prevent void falls while adding a dramatic, stylised underground appearance.
+
+This tool generates a structured base consisting of **bedrock, lava, and crust layers**, giving your world a strong visual identity beneath the surface.
+
+### 🧪 Example
+
+![Bedrock Example](images/bedrock.png)
+
+### 🚀 Usage
+
+Add an **Import Material Provider** node to your biome setup and set it to:
+
+```json
+Jakaya_Tools.Bedrock
+```
+---
 ## 📦 Installation
 
 ### 🔽 Download
@@ -62,7 +77,7 @@ Jakaya_Tools.Contour10
 2. Select **Download ZIP**
 3. Extract the contents to a location of your choice
 
----
+
 
 ### 📁 Install into Hytale
 
