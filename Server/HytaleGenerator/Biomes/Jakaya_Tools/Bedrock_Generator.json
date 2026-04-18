@@ -660,7 +660,7 @@
 				"$width": 510,
 				"$height": 74,
 				"$name": "Lava Lake sitting below the Basalt",
-				"$text": "Its kind of like the core but not really just more intresting than hitting bedrock ",
+				"$text": "Its kind of like the core but not really just more intresting than hitting bedrock dont recommend swimming in it",
 				"$fontSize": 9
 			},
 			{
@@ -684,7 +684,7 @@
 				"$width": 209,
 				"$height": 100,
 				"$name": "Islands of glowing lavarock",
-				"$text": "Stunning cracked effect with lava inbetween",
+				"$text": "Stunning cracked effect with lava inbetween ",
 				"$fontSize": 9
 			},
 			{
@@ -696,7 +696,7 @@
 				"$width": 466,
 				"$height": 100,
 				"$name": "Final transition",
-				"$text": "Uses some of the fractured crust math to make sure everything lines up so player is warned of lava below",
+				"$text": "Uses some of the fractured crust math to make sure everything lines up so player is warned of lava below also looks cooler than the layer below it  gets hotter the closer you get",
 				"$fontSize": 9
 			}
 		],
