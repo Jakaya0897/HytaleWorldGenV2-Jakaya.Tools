@@ -1,0 +1,51 @@
+########################################
+# Hytale WorldGen - Ignore Rules
+########################################
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.tmp
+
+########################################
+# BIOMES
+########################################
+
+# Ignore everything in Biomes
+Server/HytaleGenerator/Biomes/*
+
+# Allow Jakaya_Tools folder (FIXED CASE)
+!Server/HytaleGenerator/Biomes/Jakaya_Tools/
+
+# Allow everything inside it
+!Server/HytaleGenerator/Biomes/Jakaya_Tools/**
+
+########################################
+# DENSITY
+########################################
+
+Server/HytaleGenerator/Density/*
+
+# FIXED CASE
+!Server/HytaleGenerator/Density/Jakaya_Tools/
+!Server/HytaleGenerator/Density/Jakaya_Tools/**
+
+########################################
+# WORLD STRUCTURES
+########################################
+
+Server/HytaleGenerator/WorldStructures/*
+
+# FIXED CASE
+!Server/HytaleGenerator/WorldStructures/Jakaya_Tools/
+!Server/HytaleGenerator/WorldStructures/Jakaya_Tools/**
+
+########################################
+# Backups
+########################################
+
+*Backup.json
+manifest.json
