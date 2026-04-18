@@ -385,7 +385,7 @@
 						"$NodeId": "ConstantMaterialProvider-08c9ecda-f75f-444a-b81c-9ec7ed533a00",
 						"Material": {
 							"$NodeId": "Material-2ab45f72-83c7-4812-9c97-e6e79ba449a9",
-							"Solid": "Soil_Clay_Black",
+							"Solid": "Soil_Clay_Red",
 							"SolidBottomUp": false
 						},
 						"Type": "Constant"
