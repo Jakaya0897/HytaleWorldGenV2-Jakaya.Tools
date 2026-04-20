@@ -1,0 +1,355 @@
+{
+	"$NodeEditorMetadata": {
+		"$Nodes": {
+			"ConstantDensityNode-5ec5c8dc-814f-4386-aa2b-bdf26b7006b1": {
+				"$Position": {
+					"$x": -3975.6595408751095,
+					"$y": -4109.79602851303
+				},
+				"$Title": "Replace Me"
+			},
+			"BaseHeight.Density-ac70e7ba-f651-4152-86de-d992b985fb8b": {
+				"$Position": {
+					"$x": -3315.631074310454,
+					"$y": -3638.089470331992
+				}
+			},
+			"CurvePoint-7229db2b-c254-42e6-8c29-45606255d5b2": {
+				"$Position": {
+					"$x": -2758.631074310454,
+					"$y": -3474.589470331992
+				}
+			},
+			"CurvePoint-314214e3-4f87-4472-98c0-9207813669d7": {
+				"$Position": {
+					"$x": -2758.631074310454,
+					"$y": -3283.589470331992
+				}
+			},
+			"ManualCurve-8568b132-dfa6-4e16-be78-1ce4bee0439e": {
+				"$Position": {
+					"$x": -3315.631074310454,
+					"$y": -3337.089470331992
+				}
+			},
+			"CurveMapper.Density-ee7acc6d-fde5-47fa-8dbc-3c4fa8db130b": {
+				"$Position": {
+					"$x": -3874.631074310454,
+					"$y": -3514.589470331992
+				}
+			},
+			"BaseHeight.Density-b5fda21f-ac66-4351-840d-93b947129561": {
+				"$Position": {
+					"$x": -3315.631074310454,
+					"$y": -2645.089470331992
+				}
+			},
+			"CurvePoint-0fd9a6d0-0db3-48aa-bbeb-74adf4f7600a": {
+				"$Position": {
+					"$x": -2758.631074310454,
+					"$y": -2672.589470331992
+				}
+			},
+			"CurvePoint-6fd528f7-83eb-4a67-934f-ae7ef5bc3d93": {
+				"$Position": {
+					"$x": -2758.631074310454,
+					"$y": -2481.589470331992
+				}
+			},
+			"CurvePoint-379357e9-bbca-49f8-b294-4550e23a8aa3": {
+				"$Position": {
+					"$x": -2758.631074310454,
+					"$y": -2290.589470331992
+				}
+			},
+			"CurvePoint-c82efd45-dc05-4d55-9818-c1ad899d84eb": {
+				"$Position": {
+					"$x": -2758.631074310454,
+					"$y": -2099.589470331992
+				}
+			},
+			"ManualCurve-ef94068d-bfee-46e3-b46e-9b463c1bf797": {
+				"$Position": {
+					"$x": -3315.631074310454,
+					"$y": -2374.089470331992
+				}
+			},
+			"CurveMapper.Density-4b03d972-c094-4380-adf1-b951d9223a24": {
+				"$Position": {
+					"$x": -3874.631074310454,
+					"$y": -2521.589470331992
+				}
+			},
+			"Mix.Density-e51aa57c-7d84-4681-96fc-077b87bb338c": {
+				"$Position": {
+					"$x": -4683.631074310454,
+					"$y": -2903.589470331992
+				}
+			}
+		},
+		"$FloatingNodes": [
+			{
+				"$NodeId": "Mix.Density-e51aa57c-7d84-4681-96fc-077b87bb338c",
+				"Inputs": [
+					{
+						"$NodeId": "ConstantDensityNode-5ec5c8dc-814f-4386-aa2b-bdf26b7006b1",
+						"ExportAs": "",
+						"Skip": false,
+						"Value": 1,
+						"Type": "Constant"
+					},
+					{
+						"$NodeId": "CurveMapper.Density-ee7acc6d-fde5-47fa-8dbc-3c4fa8db130b",
+						"Inputs": [
+							{
+								"$NodeId": "BaseHeight.Density-ac70e7ba-f651-4152-86de-d992b985fb8b",
+								"Skip": false,
+								"BaseHeightName": "Base",
+								"Distance": true,
+								"Type": "BaseHeight"
+							}
+						],
+						"Curve": {
+							"$NodeId": "ManualCurve-8568b132-dfa6-4e16-be78-1ce4bee0439e",
+							"Points": [
+								{
+									"$NodeId": "CurvePoint-7229db2b-c254-42e6-8c29-45606255d5b2",
+									"In": 0,
+									"Out": 1
+								},
+								{
+									"$NodeId": "CurvePoint-314214e3-4f87-4472-98c0-9207813669d7",
+									"In": 0.1,
+									"Out": -1
+								}
+							],
+							"Type": "Manual"
+						},
+						"Skip": false,
+						"Type": "CurveMapper"
+					},
+					{
+						"$NodeId": "CurveMapper.Density-4b03d972-c094-4380-adf1-b951d9223a24",
+						"Inputs": [
+							{
+								"$NodeId": "BaseHeight.Density-b5fda21f-ac66-4351-840d-93b947129561",
+								"Skip": false,
+								"BaseHeightName": "Base",
+								"Distance": true,
+								"Type": "BaseHeight"
+							}
+						],
+						"Curve": {
+							"$NodeId": "ManualCurve-ef94068d-bfee-46e3-b46e-9b463c1bf797",
+							"Points": [
+								{
+									"$NodeId": "CurvePoint-0fd9a6d0-0db3-48aa-bbeb-74adf4f7600a",
+									"In": -10,
+									"Out": 1
+								},
+								{
+									"$NodeId": "CurvePoint-6fd528f7-83eb-4a67-934f-ae7ef5bc3d93",
+									"In": 0,
+									"Out": 0
+								},
+								{
+									"$NodeId": "CurvePoint-379357e9-bbca-49f8-b294-4550e23a8aa3",
+									"In": 225,
+									"Out": 0
+								},
+								{
+									"$NodeId": "CurvePoint-c82efd45-dc05-4d55-9818-c1ad899d84eb",
+									"In": 235,
+									"Out": 1
+								}
+							],
+							"Type": "Manual"
+						},
+						"Skip": false,
+						"Type": "CurveMapper"
+					}
+				],
+				"Skip": false,
+				"Type": "Mix"
+			}
+		],
+		"$Links": {},
+		"$Groups": [
+			{
+				"$NodeId": "Group-e1e8f133-b9a9-4256-a34a-87e1df420edb",
+				"$Position": {
+					"$x": -4693.902616071933,
+					"$y": -3907.424516876006
+				},
+				"$width": 2195,
+				"$height": 2053,
+				"$name": "Jakaya.Density.Optimiser"
+			},
+			{
+				"$NodeId": "Group-6ecf4e9f-297b-40da-92d4-6222c374ef91",
+				"$Position": {
+					"$x": -3885.24525903398,
+					"$y": -3706.9729328772382
+				},
+				"$width": 1362,
+				"$height": 672,
+				"$name": "Surface Controller"
+			},
+			{
+				"$NodeId": "Group-28bfa3b1-665b-4793-b532-330c0bfd8bce",
+				"$Position": {
+					"$x": -3906.4730391976746,
+					"$y": -2889.303494318744
+				},
+				"$width": 1406,
+				"$height": 1029,
+				"$name": "Height Mask"
+			},
+			{
+				"$NodeId": "Group-a38774a1-40ef-4b86-a548-77b50263b2ba",
+				"$Position": {
+					"$x": -3992.060470508306,
+					"$y": -4268.390680007833
+				},
+				"$width": 520,
+				"$height": 337,
+				"$name": ">Terrain Here<"
+			}
+		],
+		"$Comments": [
+			{
+				"$NodeId": "Comment-83e027e5-b0ba-46de-a237-c06091c50b75",
+				"$Position": {
+					"$x": -4691.9745816949935,
+					"$y": -3872.3236514979117
+				},
+				"$width": 507,
+				"$height": 81,
+				"$name": "What  is this?",
+				"$text": "Height optimisation creates a stable base density field. Each feature (hills, cliffs, etc.) is then shaped independently using curves (normalisation), and finally rebased so it attaches correctly to the terrain surface.",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-cf4f09e2-d51f-4bec-803b-ced1198ac234",
+				"$Position": {
+					"$x": -3882.7106181635986,
+					"$y": -3669.4722750067936
+				},
+				"$width": 376,
+				"$height": 114,
+				"$name": "What is this?",
+				"$text": "This curve defines where the ground is: everything below it is solid and everything above it is air. It uses a very small gap (like 0 to 0.1) so the change happens almost instantly, giving you a clean, sharp surface instead of a soft or messy transition.",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-e9825726-6de8-4ace-95fc-10e3a493b65e",
+				"$Position": {
+					"$x": -2758.3911031672665,
+					"$y": -3572.928371398664
+				},
+				"$width": 178,
+				"$height": 96,
+				"$name": "Ground Level",
+				"$text": "Marks the ground level everything below is solidMarks the ground level everything below is solid",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-a95d9c28-9072-4d89-972f-ecfe502a069f",
+				"$Position": {
+					"$x": -2760.063702905619,
+					"$y": -3170.5970385028268
+				},
+				"$width": 178,
+				"$height": 96,
+				"$name": "Air",
+				"$text": "Marks where air begins everything above is empty",
+				"$fontSize": 8
+			},
+			{
+				"$NodeId": "Comment-72b061c9-b49e-48e6-8f23-052d0ae37141",
+				"$Position": {
+					"$x": -3319.440939751976,
+					"$y": -3441.1246891872083
+				},
+				"$width": 408,
+				"$height": 100,
+				"$name": "BaseHeight Density",
+				"$text": "Defined by the the default.json by default Y=80",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-3576b07d-db2e-49dd-b7ab-6be04f20a8e8",
+				"$Position": {
+					"$x": -3902.6469697189054,
+					"$y": -2851.6955064825274
+				},
+				"$width": 509,
+				"$height": 97,
+				"$name": "What is this?",
+				"$text": "This curve acts as a height mask, controlling where terrain is allowed to be modified: in the middle it allows full modification, while toward the bottom and top it gradually restricts changes, ensuring the ground stays solid below the set value and preventing terrain from extending too high above.",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-ce72e071-55ec-44c9-b288-fed1a7094a99",
+				"$Position": {
+					"$x": -3319.285626499553,
+					"$y": -2744.8062411386177
+				},
+				"$width": 408,
+				"$height": 100,
+				"$name": "BaseHeight Density",
+				"$text": "Defined by the the default.json by default Y=80",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-ae18f2c3-7fb4-452d-9b5e-a61430b7b85c",
+				"$Position": {
+					"$x": -2760.566907422546,
+					"$y": -2774.2623971000107
+				},
+				"$width": 200,
+				"$height": 100,
+				"$name": "Curve bottom",
+				"$text": "Below Y = 70 (with base set to Y = 80 in default.json), no terrain modification is allowed.",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-b90a37f2-f4ab-4ba2-a034-72cfa594492e",
+				"$Position": {
+					"$x": -2759.5878754593955,
+					"$y": -1979.6895500832343
+				},
+				"$width": 200,
+				"$height": 100,
+				"$name": "Curve Top",
+				"$text": "Above Y = 315 (with base set to Y = 80 in default.json), no terrain modification is allowed.",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-8c62c74b-3df2-410f-9224-7fd8e769819f",
+				"$Position": {
+					"$x": -4686.387317303073,
+					"$y": -3010.274727336944
+				},
+				"$width": 413,
+				"$height": 100,
+				"$name": "Mix Density",
+				"$text": "Mix Density blends two inputs (A and B) using a driver/mask to control the result.\n\n",
+				"$fontSize": 9
+			},
+			{
+				"$NodeId": "Comment-29c39a55-94ce-4d1a-95c1-1eda7ef1ab8f",
+				"$Position": {
+					"$x": -3988.2220637405176,
+					"$y": -4229.067232677351
+				},
+				"$width": 360,
+				"$height": 101,
+				"$name": "What is this?",
+				"$text": "Typically, you would use a Min or Max node here to combine multiple density fields most commonly Max. In this case, a constant value of 1 is used instead, which effectively fills the entire world with solid terrain.",
+				"$fontSize": 9
+			}
+		],
+		"$WorkspaceID": "HytaleGenerator - Biome"
+	}
+}
