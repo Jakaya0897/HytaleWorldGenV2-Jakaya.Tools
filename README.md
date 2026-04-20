@@ -72,6 +72,21 @@ Add an **Import Material Provider** node to your biome setup and set it to:
 Jakaya_Tools.Bedrock
 ```
 ---
+🏔️ Height Density Optimiser
+
+Provides a fully commented height optimisation setup that creates a stable base for terrain generation.
+
+This tool defines a clean surface cutoff and a height mask, ensuring terrain behaves predictably from deep underground up to near the world height limit.
+
+It is designed to be reusable across projects, giving you a solid foundation to build hills, cliffs, and other terrain features on top of.
+
+🧪 Example
+
+![HeightDensity Example](images/HeightDensityOptimiser.png)
+
+🚀 Usage
+Copy and paste into your existing project. All above-ground density fields should be routed through this Mix node—see comments in the file for more details.
+---
 ## 📦 Installation
 
 ### 🔽 Download
