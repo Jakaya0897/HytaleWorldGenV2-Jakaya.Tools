@@ -12,11 +12,11 @@
       "Type": "DecimalConstants",
       "Entries": [
         {
-          "Name": "Base",
-          "Value": 80
+          "Name": "Sky",
+          "Value": 230
         },
         {
-          "Name": "Water",
+          "Name": "Base",
           "Value": 80
         },
         {
